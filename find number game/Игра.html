@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="findNum.js"></script>
+    <link href="style.css" rel="stylesheet">
+    <title>find number</title>
+</head>
+
+<body>
+<div id = 'start'>
+<p>Начиная с "0" нажимайте на числа до тех пор, пока не дойдете до последнего</p>
+<input id = 'lines'  /> введите число строк в головоломке<br/>
+<input id = 'colums'   /> введите число столбцов в головоломке<br/>
+<input id = 'time' /> Время для решения, секунд<br/>
+<button id = 'button1' onclick = 'goGame()'>начать</button>
+</div>
+
+<div id = 'controls' style = 'display:none'>
+<p>осталось времени</p> <p id = 'timerP'></p>
+
+
+<div id = 'playGround'></div>
+
+
+
+
+</div>
+
+</body>
+
+</html>
