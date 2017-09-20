@@ -1,0 +1,43 @@
+#allDiv {
+
+border: 1px solid black;
+height: 30%;
+width: 30%;
+padding-left: 20px;
+padding-top: 20px;
+background-color: #c9bdb9;
+border-radius: 8px;
+}
+
+
+div {
+
+display: block;
+}
+
+button{
+text-align: center;
+margin: 20px;
+height: 60px;
+width: 60px;
+border-radius: 8px
+}
+button:hover {
+
+background-color: grey;
+cursor: pointer;
+font-weight:900;
+border-radius: 8px
+}
+
+input {
+height: 50px;
+width: 70%;
+border-radius: 8px
+}
+
+.shadow {
+background: #fc0; /* Цвет фона */
+box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+padding: 10px;
+}
