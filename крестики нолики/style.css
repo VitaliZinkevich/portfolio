@@ -1,0 +1,42 @@
+p {
+display: inline;
+
+}
+
+div{
+
+padding-left: 50px;
+
+}
+
+
+td {
+
+height: 100px;
+width: 100px;
+border: 1px solid black;
+
+text-align: center;
+font-size: 30px;
+}
+
+# all{
+
+display: table;
+
+}
+
+
+#stats {
+
+margin-top: 50px;
+display: table-cell;
+
+}
+
+
+#play {
+
+display: table-cell;
+
+}
