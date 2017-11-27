@@ -1,0 +1,6 @@
+table td {
+    
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+}

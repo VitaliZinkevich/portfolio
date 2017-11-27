@@ -1,0 +1,22 @@
+
+
+
+
+		
+		takeComp (){
+			
+			var allCards =[]
+			allCards = allCards.concat (this.state.playGMy)
+			allCards = allCards.concat (this.state.playGComp)
+			
+			this.setState ({playGMy:[]})
+			this.setState ({playGComp:[]})
+			
+			this.state.player2Hand =this.state.player2Hand.concat (allCards)
+			this.setState ({player2Hand:this.state.player2Hand})
+			this.done()
+		}
+		
+						
+		
+		
