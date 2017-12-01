@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>максимальные члены массива не рядом</title>
+</head>
+
+<body>
+<textarea id ='teatArea'></textarea>
+
+<button onclick = 'snowdenDecrypt()' id = 'decrypt'>расшифровать</button>
+
+<div id = 'ans'>for ans</div>
+<script>
+window.onload = function() {
+
+element = document.getElementById('decrypt');
+element.onclick = function () {
+
+    var message = document.getElementById('teatArea').value
+    snowdenDecrypt (message)
+    }
+}
+
+function snowdenDecrypt(message) {
+
+//~ They replace all successive identical letters by one such letter.
+//~ They insert two identical letters at an arbitrary place many times.
+
+    function checkForDoubleLetters (message){
+
+        var patt = /^((\w)(?!\2))+$/i
+        var res = patt.test(message);
+        return res
+        }
+
+    if (checkForDoubleLetters(message) == true) {
+
+        document.getElementById('ans').innerHTML = message
+
+        } else {
+
+        while (checkForDoubleLetters(message) == false) {
+
+        var array = message.split("")
+
+        for (i = 0 ; i < array.length; i ++) {
+            if (array[i+1] == undefined) {
+                break;
+                }
+
+            if (array[i] == array[i+1]){
+                array.splice (i, 2)
+                }
+
+        }
+
+        message = array.join("")
+
+        }
+
+        document.getElementById('ans').innerHTML = message
+            }
+
+}
+    </script>
+</body>
+
+</html>
